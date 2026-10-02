@@ -2,7 +2,7 @@
 
 https://github.com/user-attachments/assets/1b712c46-6bb2-47b6-88b2-b91ca2a02ded
 
-![Godot Version](https://img.shields.io/badge/Godot-4.6+-blue.svg) ![License](https://img.shields.io/badge/License-MIT-green.svg) ![Version](https://img.shields.io/badge/Version-2608.4-orange)
+![Godot Version](https://img.shields.io/badge/Godot-4.6+-blue.svg) ![License](https://img.shields.io/badge/License-MIT-green.svg) ![Version](https://img.shields.io/badge/Version-2610.1-orange)
 
 # Coldrock CSV Translation Plugin
 This repository contains the SeeAsWheee! Plugin, a visual, keyboard-driven CSV translation & localization editor for Godot 4.x
