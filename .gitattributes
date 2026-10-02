@@ -1,0 +1,21 @@
+*.yy linguist-language=Game Maker Language
+*.yy linguist-generated=true
+*.gd linguist-language=GDScript
+
+# data formats
+*.json text=auto eol=lf
+*.xml text=auto eol=lf
+
+# GameMaker LF
+*.gml text=auto eol=lf
+*.yy text=auto eol=lf
+*.yyp text=auto eol=lf
+
+# Godot LF
+*.godot text=auto eol=lf
+*.gd text=auto eol=lf
+*.gd.uid text=auto eol=lf
+*.tscn text=auto eol=lf
+*.import text=auto eol=lf
+*.tres text=auto eol=lf
+*.cfg text=auto eol=lf
