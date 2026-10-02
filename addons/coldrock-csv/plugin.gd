@@ -77,14 +77,14 @@ var main_ui_instance:Control = null
 var _export_plugin:EditorExportPlugin
 
 func _enter_tree() -> void:
-	var sw := StopWatch.new("Coldrock " + PLUGIN_NAME)
+	var sw = _try_create_stopwatch()
 	_prepare_settings()
 	_prepare_autoloads()
 	_remove_obsolete_settings()
 	_add_settings_listener()
 	_setup_export_plugin()
 	_prepare_editor()
-	sw.finish("plugin initialized in")
+	if sw: sw.finish("plugin initialized in")
 
 
 func _exit_tree() -> void:
@@ -105,6 +105,18 @@ func _notification(what:int) -> void:
 func _on_settings_changed() -> void:
 	pass # NOTE: This is called VERY frequently when project settings are open!
 
+
+#region stopwatch (if available)
+static func _try_create_stopwatch(sw_name:String = "") -> Object:
+	for class_info:Dictionary in ProjectSettings.get_global_class_list():
+		if class_info.get("class", "") == "StopWatch":
+			var script_path:String = class_info.get("path", "")
+			if ResourceLoader.exists(script_path):
+				var sw_script:Script = load(script_path) as Script
+				if sw_script:
+					return sw_script.new(sw_name if not sw_name.is_empty() else "Coldrock " + PLUGIN_NAME)
+	return null
+#endregion
 
 #region core
 func _has_main_screen() -> bool:
