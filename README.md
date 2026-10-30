@@ -1,6 +1,6 @@
 ![coldrock-banner-itch-960x110](https://github.com/coldrockgames/.github/blob/main/public_images/repo-banner-trans.png)
 
-![Godot Version](https://img.shields.io/badge/Godot-4.6+-blue.svg) ![License](https://img.shields.io/badge/License-MIT-green.svg) ![Version](https://img.shields.io/badge/Version-2610.1-orange)
+![Godot Version](https://img.shields.io/badge/Godot-4.6+-blue.svg) ![License](https://img.shields.io/badge/License-MIT-green.svg) ![Version](https://img.shields.io/badge/Version-2610.2-orange)
 
 https://github.com/user-attachments/assets/1b712c46-6bb2-47b6-88b2-b91ca2a02ded
 
